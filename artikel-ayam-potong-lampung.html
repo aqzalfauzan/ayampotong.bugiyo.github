@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bisnis Ayam Potong di Lampung: Harga Naik-Turun, Untung Menipis, dan Cara Pedagang Bertahan</title>
+<meta name="description" content="Laporan tentang kondisi usaha ayam potong di Lampung sepanjang 2026: harga yang naik-turun, peternak yang merugi, keluhan pedagang pasar, dan cara bertahan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F3;
+  --paper:#FFFFFF;
+  --ink:#17302E;
+  --muted:#586C69;
+  --line:#D5DEDB;
+  --tarp:#1F5F8B;
+  --tarp-soft:#E3EEF6;
+  --yolk:#E8A817;
+  --yolk-soft:#FBF1D6;
+  --comb:#B8342A;
+  --comb-soft:#F8E4E1;
+  --leaf:#2E7A4C;
+  --on-accent:#FFFFFF;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Serif 4", Georgia, "Times New Roman", serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1B1A; --paper:#152524; --ink:#E4EDEB; --muted:#9FB3AF; --line:#2A3E3C;
+    --tarp:#6AAEDD; --tarp-soft:#1A3142; --yolk:#F2C04A; --yolk-soft:#3A3117;
+    --comb:#F07A6E; --comb-soft:#3D2220; --leaf:#72C893; --on-accent:#0F1B1A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1B1A; --paper:#152524; --ink:#E4EDEB; --muted:#9FB3AF; --line:#2A3E3C;
+  --tarp:#6AAEDD; --tarp-soft:#1A3142; --yolk:#F2C04A; --yolk-soft:#3A3117;
+  --comb:#F07A6E; --comb-soft:#3D2220; --leaf:#72C893; --on-accent:#0F1B1A;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.125rem;line-height:1.72;font-optical-sizing:auto}
+img,svg{max-width:100%}
+a{color:var(--tarp);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--yolk);outline-offset:3px;border-radius:2px}
+
+/* masthead */
+.mast{background:var(--paper);border-bottom:1px solid var(--line)}
+.mast-inner{max-width:1080px;margin:0 auto;padding:.9rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+.brand span{color:var(--tarp)}
+.mast-note{font-family:var(--display);font-size:.88rem;color:var(--muted)}
+.tapis{display:block;width:100%;height:14px}
+
+/* hero */
+.hero{max-width:1080px;margin:0 auto;padding:3rem 1.25rem 2rem;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:2.5rem;align-items:center}
+.kicker{font-family:var(--display);font-weight:500;font-size:.95rem;color:var(--tarp);margin:0 0 .8rem}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,5.2vw,3.6rem);line-height:1.04;letter-spacing:-.025em;margin:0 0 1.2rem}
+.dek{font-size:1.2rem;line-height:1.6;color:var(--muted);margin:0 0 1.4rem;max-width:36em}
+.byline{font-family:var(--display);font-size:.9rem;color:var(--muted);margin:0}
+.hero-art{justify-self:center;width:100%;max-width:340px}
+
+/* article */
+article{max-width:1080px;margin:0 auto;padding:0 1.25rem 4rem}
+.col{max-width:40rem;margin:0 auto}
+.col p{margin:0 0 1.25em}
+.col p.lead::first-letter{font-family:var(--display);font-weight:800;float:left;font-size:4.1em;line-height:.82;padding:.08em .1em 0 0;color:var(--tarp)}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(1.55rem,3vw,2rem);line-height:1.15;letter-spacing:-.015em;margin:3rem 0 1rem}
+h3{font-family:var(--display);font-weight:700;font-size:1.2rem;line-height:1.3;margin:2rem 0 .5rem}
+strong{font-weight:600}
+.pull{font-family:var(--display);font-weight:700;font-size:clamp(1.35rem,2.6vw,1.7rem);line-height:1.3;letter-spacing:-.01em;border-left:6px solid var(--yolk);padding:.2rem 0 .2rem 1.1rem;margin:2.2rem 0}
+
+/* figures */
+figure{margin:2.4rem auto;max-width:52rem;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.4rem 1.1rem}
+figure h4{font-family:var(--display);font-weight:700;font-size:1.08rem;margin:0 0 .3rem;line-height:1.3}
+figure .sub{font-family:var(--display);font-size:.88rem;color:var(--muted);margin:0 0 1.1rem}
+figcaption{font-family:var(--display);font-size:.82rem;color:var(--muted);margin-top:1rem;line-height:1.5;border-top:1px dashed var(--line);padding-top:.7rem}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scroll svg{min-width:620px;display:block}
+.chart text{font-family:var(--display)}
+
+/* timeline */
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:4.6rem;top:.3rem;bottom:.3rem;width:2px;background:var(--line)}
+.tl li{display:grid;grid-template-columns:4rem 1.2rem 1fr;gap:.6rem;align-items:start;padding:.55rem 0}
+.tl .m{font-family:var(--display);font-weight:700;font-size:.92rem;text-align:right;padding-top:.15rem}
+.tl .dot{width:1.2rem;height:1.2rem;border-radius:50%;margin-top:.2rem;display:grid;place-items:center;font-size:.7rem;color:var(--on-accent);position:relative;z-index:1}
+.tl .up .dot,.tl li.up .dot{background:var(--leaf)}
+.tl li.down .dot{background:var(--comb)}
+.tl .t{font-family:var(--display);font-size:.95rem;line-height:1.45}
+.tl .t b{display:block;font-weight:700}
+.tl .t span{color:var(--muted);font-size:.86rem}
+
+/* price chain */
+.chain{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.9rem;position:relative}
+.step{background:var(--bg);border-radius:10px;padding:1rem .9rem 1rem;position:relative;font-family:var(--display)}
+.step .who{font-weight:700;font-size:1rem;margin:0 0 .5rem}
+.step .what{font-size:.84rem;color:var(--muted);margin:0 0 .75rem;line-height:1.45}
+.tag{display:inline-block;font-weight:700;font-size:.9rem;padding:.25rem .65rem .25rem .9rem;background:var(--yolk);color:#1C1606;border-radius:3px 6px 6px 3px;position:relative;line-height:1.3;margin:.15rem 0}
+.tag::before{content:"";position:absolute;left:.3rem;top:50%;width:.3rem;height:.3rem;border-radius:50%;background:var(--bg);transform:translateY(-50%)}
+.tag.alt{background:var(--tarp-soft);color:var(--ink)}
+.step:not(:last-child)::after{content:"";position:absolute;right:-.72rem;top:1.25rem;width:.55rem;height:.55rem;border-top:2px solid var(--muted);border-right:2px solid var(--muted);transform:rotate(45deg)}
+
+/* shrink calc */
+.calc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin-top:1.1rem;font-family:var(--display)}
+.calc div{background:var(--bg);border-radius:10px;padding:.8rem .9rem}
+.calc .n{font-weight:800;font-size:1.35rem;letter-spacing:-.01em;display:block;line-height:1.2}
+.calc .l{font-size:.82rem;color:var(--muted);line-height:1.4;display:block;margin-top:.2rem}
+.calc .warn .n{color:var(--comb)}
+
+/* sources */
+.sources{margin-top:3.5rem;padding-top:1.5rem;border-top:2px solid var(--ink)}
+.sources h2{margin-top:0;font-size:1.25rem}
+.sources ol{font-family:var(--display);font-size:.9rem;line-height:1.55;padding-left:1.3rem;color:var(--muted)}
+.sources li{margin-bottom:.45rem}
+
+footer{background:var(--paper);border-top:1px solid var(--line)}
+.foot{max-width:1080px;margin:0 auto;padding:1.6rem 1.25rem;font-family:var(--display);font-size:.88rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:2rem;gap:1.5rem}
+  .hero-art{max-width:240px;order:-1;justify-self:start}
+  .chain{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .step:nth-child(2)::after{display:none}
+}
+@media (max-width:520px){
+  body{font-size:1.06rem}
+  figure{padding:1.1rem 1rem .9rem;border-radius:10px}
+  .chain{grid-template-columns:1fr}
+  .step::after{display:none}
+  .calc{grid-template-columns:1fr}
+  .mast-note{display:none}
+  .tl::before{left:3.9rem}
+  .tl li{grid-template-columns:3.3rem 1.2rem 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .swing{transform-origin:170px 22px;animation:swing 3.2s ease-in-out 1 both}
+  @keyframes swing{0%{transform:rotate(7deg)}35%{transform:rotate(-5deg)}65%{transform:rotate(2deg)}100%{transform:rotate(0)}}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-inner">
+    <a class="brand" href="#">Ayam Potong <span>Bu Giyo</span></a>
+    <p class="mast-note">Catatan seputar usaha ayam potong di Lampung</p>
+  </div>
+  <svg class="tapis" viewBox="0 0 400 14" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="tp" width="28" height="14" patternUnits="userSpaceOnUse">
+        <rect width="28" height="14" fill="var(--tarp)"/>
+        <path d="M0 7 L7 0 L14 7 L7 14 Z" fill="var(--yolk)"/>
+        <path d="M14 7 L21 0 L28 7 L21 14 Z" fill="var(--ink)"/>
+        <path d="M5 7 L7 5 L9 7 L7 9 Z" fill="var(--tarp)"/>
+        <path d="M19 7 L21 5 L23 7 L21 9 Z" fill="var(--yolk)"/>
+      </pattern>
+    </defs>
+    <rect width="400" height="14" fill="url(#tp)"/>
+  </svg>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="kicker">Laporan usaha, Bandar Lampung</p>
+    <h1>Bisnis ayam potong di Lampung: harga naik-turun, untung menipis, dan cara pedagang bertahan</h1>
+    <p class="dek">Sepanjang 2026, harga ayam di Lampung bergerak seperti jarum timbangan yang tidak pernah diam. Peternak merugi di kandang, pedagang mengeluh sepi di lapak, sementara pembeli tetap membutuhkan ayam setiap hari.</p>
+    <p class="byline">Senin, 28 September 2026</p>
+  </div>
+  <svg class="hero-art" viewBox="0 0 340 360" role="img" aria-label="Ilustrasi ayam potong digantung di timbangan pasar dengan label harga Rp35.000 per kilogram">
+    <rect x="30" y="14" width="280" height="10" rx="5" fill="var(--muted)" opacity=".5"/>
+    <g class="swing">
+      <path d="M170 22 v34" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M170 56 q-12 0 -12 12 q0 10 10 10" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+      <!-- legs -->
+      <path d="M154 80 l6 52 M186 80 l-6 52" stroke="var(--yolk)" stroke-width="7" stroke-linecap="round"/>
+      <path d="M146 78 h48" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+      <!-- body -->
+      <ellipse cx="170" cy="190" rx="66" ry="74" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+      <path d="M120 170 q-26 30 -8 70" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M220 170 q26 30 8 70" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M146 150 q24 16 48 0" fill="none" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/>
+      <!-- neck & head -->
+      <path d="M160 262 q10 30 10 44" fill="none" stroke="var(--ink)" stroke-width="4"/>
+      <path d="M180 262 q-6 24 -2 44" fill="none" stroke="var(--ink)" stroke-width="4"/>
+      <circle cx="174" cy="318" r="14" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+      <path d="M166 334 q4 12 10 14 q4 -8 8 -14" fill="var(--comb)"/>
+      <!-- tag -->
+      <path d="M232 214 l40 28" stroke="var(--muted)" stroke-width="2"/>
+      <g transform="rotate(-8 290 262)">
+        <path d="M262 246 h78 v44 h-78 l-12 -22 z" fill="var(--yolk)"/>
+        <circle cx="266" cy="268" r="4" fill="var(--bg)"/>
+        <text x="304" y="265" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="15" fill="#1C1606">Rp35.000</text>
+        <text x="304" y="281" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="500" font-size="11" fill="#1C1606">per kg, bersih</text>
+      </g>
+    </g>
+  </svg>
+</section>
+
+<article>
+  <div class="col">
+    <p class="lead">Ayam potong barangkali adalah komoditas paling biasa di dapur orang Lampung. Rumah tangga membelinya untuk lauk harian, warung pecel lele dan penjual ayam geprek membelinya setiap pagi, dapur katering membelinya dalam jumlah puluhan kilogram. Karena kebutuhannya harian, banyak orang menganggap usaha ayam potong sebagai usaha yang aman. Anggapan itu hanya setengah benar. Usaha ayam potong memang aman dari sisi permintaan, tetapi usaha ayam potong sangat rawan dari sisi harga.</p>
+
+    <p>Tahun 2026 memperlihatkan hal itu dengan jelas. Pedagang di pasar tradisional Bandar Lampung merasakan perubahan hampir dari pekan ke pekan. Ada pekan ketika harga naik dan pembeli mengurangi belanja. Ada pekan ketika harga turun, tetapi pembeli juga sedang sepi. Di hulu, peternak menghadapi masalah yang lebih berat lagi: biaya pakan terus naik, sementara harga jual ayam hidup berkali-kali jatuh di bawah modal.</p>
+
+    <p>Tulisan ini merangkum apa yang terjadi di kandang, di tangan broker, dan di lapak pasar sepanjang tahun ini, lalu melihat apa saja yang bisa dilakukan pelaku usaha kecil agar tetap bertahan.</p>
+
+    <h2>Harga yang tidak pernah diam</h2>
+
+    <p>Menjelang Ramadhan pada pertengahan Februari, pedagang di Pasar Gintung menaikkan harga sekitar Rp5.000 per ekor. Permintaan untuk menu sahur dan berbuka sedang tinggi, dan menurut para pedagang, kenaikan itu tidak membuat pembeli mundur. Ayam tetap dibeli karena memang dibutuhkan.</p>
+
+    <p>Setelah Lebaran, keadaan berbalik. Peternak yang tergabung dalam Permindo melaporkan bahwa sekitar sepekan setelah Idul Fitri, harga ayam hidup di tingkat peternak turun dari kisaran Rp24.000 menjadi sekitar Rp18.500 per kilogram. Pasokan ayam yang disiapkan untuk musim ramai tidak lagi terserap, dan ayam berukuran besar mulai menumpuk.</p>
+
+    <p>Pola yang sama muncul lagi di akhir Juni. Di Pasar Tempel Rajabasa, harga ayam potong turun dari Rp38.000 menjadi Rp35.000 per kilogram dalam sepekan. Pedagang menyebut dua penyebab: libur sekolah, dan berhentinya sementara pesanan dari dapur SPPG program Makan Bergizi Gratis. Pertengahan Juli, harga kembali merangkak. Pedagang di Pasar Rakyat Way Halim mengaku membeli ayam hidup dari broker di kisaran Rp24.500 sampai Rp28.000 per kilogram.</p>
+  </div>
+
+  <figure>
+    <h4>Perjalanan harga ayam sepanjang 2026</h4>
+    <p class="sub">Peristiwa harga yang dilaporkan dari pasar Bandar Lampung dan dari tingkat peternak</p>
+    <ol class="tl">
+      <li class="up"><span class="m">Feb</span><span class="dot" aria-hidden="true">▲</span><span class="t"><b>Menjelang Ramadhan, harga naik sekitar Rp5.000 per ekor</b><span>Pasar Gintung, Bandar Lampung. Permintaan sahur dan berbuka tinggi.</span></span></li>
+      <li class="down"><span class="m">Apr</span><span class="dot" aria-hidden="true">▼</span><span class="t"><b>Setelah Lebaran, ayam hidup turun dari Rp24.000 ke sekitar Rp18.500/kg</b><span>Tingkat peternak, laporan Permindo. Pasokan tidak terserap.</span></span></li>
+      <li class="down"><span class="m">Mei</span><span class="dot" aria-hidden="true">▼</span><span class="t"><b>Harga ayam ras dan telur di Lampung mulai turun, pakan justru naik</b><span>Kenaikan pakan dipicu bahan baku yang masih bergantung pada impor.</span></span></li>
+      <li class="down"><span class="m">Jun</span><span class="dot" aria-hidden="true">▼</span><span class="t"><b>Ayam hidup di sebagian sentra produksi jatuh ke Rp13.000/kg</b><span>Disebut peternak sebagai titik terburuk. Hampir semua sentra kelebihan stok.</span></span></li>
+      <li class="down"><span class="m">Jun</span><span class="dot" aria-hidden="true">▼</span><span class="t"><b>Ayam potong turun dari Rp38.000 ke Rp35.000/kg</b><span>Pasar Tempel Rajabasa. Libur sekolah, pesanan dapur MBG berhenti sementara.</span></span></li>
+      <li class="up"><span class="m">Jul</span><span class="dot" aria-hidden="true">▲</span><span class="t"><b>Ayam hidup dari broker naik lagi ke Rp24.500–Rp28.000/kg</b><span>Pasar Rakyat Way Halim. Pedagang menjual potong bersih Rp35.000/kg.</span></span></li>
+    </ol>
+    <figcaption>Disusun dari pemberitaan Kompas, Detik, CNBC Indonesia, Lampung Post, dan Tribun Lampung, Februari sampai Juli 2026. Angka tingkat peternak berlaku nasional; angka pasar berlaku untuk Bandar Lampung.</figcaption>
+  </figure>
+
+  <div class="col">
+    <p class="pull">Naik karena ramai, turun karena sepi. Pola ini berulang hampir setiap tahun, dan pola ini pula yang harus dibaca oleh siapa pun yang ingin bertahan di usaha ayam potong.</p>
+
+    <h2>Di kandang, peternak menanggung rugi</h2>
+
+    <p>Kalau pedagang merasakan naik-turun harga, peternak merasakan sesuatu yang lebih pahit. Sepanjang 2026, harga pakan broiler naik secara akumulatif sekitar Rp800 per kilogram dan kini berada di kisaran Rp8.800 sampai Rp9.400 per kilogram di tingkat pabrik. Harga anak ayam atau DOC juga belum turun. Pada awal April, peternak masih menebusnya di kisaran Rp6.800 sampai Rp7.500 per ekor.</p>
+
+    <p>Hasilnya, harga pokok produksi ayam hidup diperkirakan sudah mencapai Rp21.000 sampai Rp22.000 per kilogram. Padahal Badan Pangan Nasional menetapkan harga acuan pembelian di tingkat peternak sebesar Rp25.000 per kilogram. Di lapangan, angka acuan itu sering hanya menjadi angka di atas kertas.</p>
+  </div>
+
+  <figure>
+    <h4>Harga ayam hidup dibandingkan modal peternak</h4>
+    <p class="sub">Rupiah per kilogram ayam hidup (live bird)</p>
+    <div class="scroll">
+      <svg class="chart" viewBox="0 0 840 300" role="img" aria-label="Diagram batang harga ayam hidup 2026. Sebelum Lebaran 24.000, sepekan setelah Lebaran 18.500, titik terendah Juni 13.000, Pasar Tempel Rajabasa akhir Juni 22.000, Pasar Way Halim pertengahan Juli 24.500. Modal peternak sekitar 21.500, harga acuan 25.000.">
+        <!-- grid -->
+        <g stroke="var(--line)" stroke-width="1">
+          <line x1="240" y1="44" x2="240" y2="258"/>
+          <line x1="433" y1="44" x2="433" y2="258"/>
+          <line x1="627" y1="44" x2="627" y2="258"/>
+          <line x1="820" y1="44" x2="820" y2="258"/>
+        </g>
+        <g font-size="12" fill="var(--muted)" text-anchor="middle">
+          <text x="240" y="278">0</text>
+          <text x="433" y="278">Rp10 rb</text>
+          <text x="627" y="278">Rp20 rb</text>
+          <text x="820" y="278">Rp30 rb</text>
+        </g>
+        <!-- bars -->
+        <g font-size="13" fill="var(--ink)" text-anchor="end">
+          <text x="226" y="75">Sebelum Lebaran</text>
+          <text x="226" y="115">Sepekan setelah Lebaran</text>
+          <text x="226" y="155">Titik terendah Juni</text>
+          <text x="226" y="195">Rajabasa, akhir Juni</text>
+          <text x="226" y="235">Way Halim, pertengahan Juli</text>
+        </g>
+        <rect x="240" y="58" width="464" height="26" rx="3" fill="var(--tarp)"/>
+        <rect x="240" y="98" width="358" height="26" rx="3" fill="var(--comb)"/>
+        <rect x="240" y="138" width="251" height="26" rx="3" fill="var(--comb)"/>
+        <rect x="240" y="178" width="425" height="26" rx="3" fill="var(--tarp)"/>
+        <rect x="240" y="218" width="474" height="26" rx="3" fill="var(--tarp)"/>
+        <g font-size="13" font-weight="700" fill="var(--on-accent)" text-anchor="end">
+          <text x="694" y="76">24.000</text>
+          <text x="588" y="116">18.500</text>
+          <text x="481" y="156">13.000</text>
+          <text x="655" y="196">22.000</text>
+          <text x="704" y="236">24.500</text>
+        </g>
+        <!-- reference lines -->
+        <line x1="656" y1="40" x2="656" y2="258" stroke="var(--ink)" stroke-width="2" stroke-dasharray="5 4"/>
+        <line x1="723" y1="40" x2="723" y2="258" stroke="var(--yolk)" stroke-width="3"/>
+        <text x="650" y="30" font-size="12" font-weight="700" fill="var(--ink)" text-anchor="end">Modal peternak ±21.500</text>
+        <text x="729" y="30" font-size="12" font-weight="700" fill="var(--ink)">Acuan 25.000</text>
+      </svg>
+    </div>
+    <figcaption>Batang merah berarti harga berada di bawah modal peternak. Tiga batang atas adalah angka tingkat peternak secara nasional (Permindo); dua batang bawah adalah harga beli ayam hidup oleh pedagang pasar di Bandar Lampung. Modal dihitung dari titik tengah perkiraan HPP Rp21.000–Rp22.000/kg.</figcaption>
+  </figure>
+
+  <div class="col">
+    <p>Seorang peternak anggota Permindo menggambarkan dilemanya dengan sederhana: ketika harga jatuh, peternak kecil tetap terpaksa menjual karena pakan harus dibayar. Kalau ayam ditahan di kandang, ayam terus membesar dan biaya pakan terus bertambah. Menjual rugi, menahan juga rugi. Kerugian yang dilaporkan peternak broiler rakyat bisa mencapai Rp7.000 per kilogram.</p>
+
+    <p>Peternak di Lampung tidak lepas dari tekanan itu. Tribun Lampung mencatat bahwa harga ayam ras dan telur di Lampung sudah turun sejak Mei, sementara harga pakan naik karena bahan bakunya masih banyak bergantung pada impor. Seorang peternak di Lampung Tengah menyebut pakan pabrikan di tingkat toko kini dijual sekitar Rp365.000 sampai Rp370.000 per sak, padahal beberapa bulan sebelumnya masih di kisaran Rp320.000-an.</p>
+
+    <p>Ada satu persoalan lain yang jarang dibicarakan pembeli. Menurut peternak, sekitar 70 persen populasi ayam pedaging dan petelur nasional masih terkonsentrasi di Pulau Jawa. Ketika Jawa kelebihan pasokan, tekanan harga merambat ke daerah lain. Lampung sendiri adalah daerah produsen yang terkadang mengirim ayam hidup ke Jawa, sehingga peternak Lampung ikut terseret ketika harga nasional jatuh.</p>
+
+    <h2>Dari kandang ke meja makan</h2>
+
+    <p>Untuk memahami di mana untung dan rugi terjadi, rantai ayam potong perlu dilihat utuh. Ayam berangkat dari kandang peternak, dibeli oleh broker atau pengepul, lalu masuk ke lapak pasar untuk dipotong dan dibersihkan. Dari lapak, ayam berpindah ke dapur rumah tangga, warung makan, katering, atau dapur MBG.</p>
+  </div>
+
+  <figure>
+    <h4>Rantai harga ayam potong di Bandar Lampung</h4>
+    <p class="sub">Kisaran harga yang dilaporkan pada pertengahan 2026</p>
+    <div class="chain">
+      <div class="step">
+        <p class="who">Peternak</p>
+        <p class="what">Menanggung pakan, DOC, obat, listrik, dan risiko kematian ayam.</p>
+        <span class="tag alt">Modal ±Rp21–22 rb/kg</span>
+        <span class="tag alt">Acuan Rp25 rb/kg</span>
+      </div>
+      <div class="step">
+        <p class="who">Broker / pengepul</p>
+        <p class="what">Mengambil ayam hidup dari kandang dan mengantar ke pedagang pasar.</p>
+        <span class="tag">Rp22–28 rb/kg hidup</span>
+      </div>
+      <div class="step">
+        <p class="who">Lapak pasar</p>
+        <p class="what">Memotong, membersihkan, dan menjual per kilogram, per ekor, atau per bagian.</p>
+        <span class="tag">Potong bersih Rp35 rb/kg</span>
+        <span class="tag">Fillet Rp55–60 rb/kg</span>
+      </div>
+      <div class="step">
+        <p class="who">Pembeli</p>
+        <p class="what">Rumah tangga, warung makan, kantin, katering, dan dapur SPPG program MBG.</p>
+        <span class="tag alt">Per ekor 1,8–2,4 kg: Rp50–55 rb</span>
+      </div>
+    </div>
+    <figcaption>Harga broker dan lapak dari Pasar Rakyat Way Halim dan Pasar Tempel Rajabasa (Tribun Lampung, Lampung Post). Modal peternak dan harga acuan dari Permindo dan Badan Pangan Nasional.</figcaption>
+  </figure>
+
+  <div class="col">
+    <p>Selisih antara Rp24.500 dan Rp35.000 terlihat lebar. Banyak orang lalu berkesimpulan bahwa pedagang ayam potong menikmati untung besar. Di sinilah banyak orang salah membaca usaha ayam potong. Yang terlihat adalah harga jual. Yang tidak terlihat adalah susut.</p>
+
+    <p>Ayam hidup yang ditimbang di lapak masih membawa bulu, darah, dan isi perut. Setelah dipotong dan dibersihkan, bobotnya berkurang cukup banyak. Hitungan kasar di bawah ini memakai asumsi rendemen karkas sekitar 72 persen, angka yang lazim untuk broiler, untuk memperlihatkan seberapa tipis ruang untung pedagang ketika ayam hidup dibeli pada harga Rp24.500 per kilogram.</p>
+  </div>
+
+  <figure>
+    <h4>Hitungan kasar: ke mana larinya selisih harga</h4>
+    <p class="sub">Contoh pembelian 10 kg ayam hidup</p>
+    <svg class="chart" viewBox="0 0 760 120" role="img" aria-label="Dari 10 kilogram ayam hidup, sekitar 7,2 kilogram menjadi karkas bersih dan 2,8 kilogram hilang sebagai bulu, darah, dan bagian lain.">
+      <rect x="0" y="20" width="547" height="46" rx="4" fill="var(--tarp)"/>
+      <rect x="547" y="20" width="213" height="46" rx="4" fill="var(--comb)" opacity=".85"/>
+      <text x="16" y="49" font-size="15" font-weight="700" fill="var(--on-accent)">7,2 kg karkas bersih</text>
+      <text x="561" y="49" font-size="14" font-weight="700" fill="var(--on-accent)">2,8 kg susut</text>
+      <text x="0" y="96" font-size="12" fill="var(--muted)">0 kg</text>
+      <text x="760" y="96" font-size="12" fill="var(--muted)" text-anchor="end">10 kg ayam hidup</text>
+    </svg>
+    <div class="calc">
+      <div><span class="n">Rp245.000</span><span class="l">Modal beli 10 kg ayam hidup pada Rp24.500/kg</span></div>
+      <div><span class="n">±Rp34.000</span><span class="l">Modal per kg karkas bersih setelah susut (Rp245.000 ÷ 7,2 kg)</span></div>
+      <div class="warn"><span class="n">±Rp1.000</span><span class="l">Sisa per kg jika dijual Rp35.000, sebelum plastik, es, air, sewa lapak, dan tenaga</span></div>
+    </div>
+    <figcaption>Ilustrasi, bukan data resmi. Rendemen nyata bergantung pada ukuran ayam, cara pemotongan, dan apakah ceker, kepala, serta jeroan dihitung terpisah. Justru dari bagian-bagian inilah pedagang biasanya menambal untung.</figcaption>
+  </figure>
+
+  <div class="col">
+    <p>Angka ini menjelaskan mengapa pedagang ayam potong tidak pernah benar-benar bisa menikmati harga tinggi. Ketika harga ayam hidup naik, harga jual tidak bisa ikut naik sebanyak itu, karena pembeli langsung mengurangi belanja. Pedagang di Way Halim yang pada Juli membeli ayam hidup Rp28.000 per kilogram tetap menjual potong bersih Rp35.000, sama dengan pedagang di lapak depannya yang membeli lebih murah. Harga jual tertahan oleh daya beli, bukan oleh modal.</p>
+
+    <h2>Keluhan yang sama dari lapak ke lapak</h2>
+
+    <p>Jika harus diringkas dalam satu kalimat, keluhan pedagang ayam potong di Bandar Lampung tahun ini adalah: sepi pembeli. Pedagang di Pasar Rakyat Way Halim mengeluhkan penurunan pembeli justru ketika harga ayam hidup sedang naik. Keluhan serupa sudah terdengar sejak tahun lalu, ketika pedagang di Pasar Tugu menyebut banyak konsumen mulai mengurangi pembelian begitu harga menyentuh Rp30.000 per kilogram.</p>
+
+    <p>Pembeli rumah tangga memang sensitif terhadap harga. Ketika harga naik, mereka cenderung membeli setengah ekor, membeli per potong, atau mengganti lauk untuk beberapa hari. Pembeli besar punya pola yang berbeda, tetapi sama-sama rapuh. Katering dan kantin sekolah berhenti belanja ketika sekolah libur. Seorang pedagang di Rajabasa menyebut langsung bahwa pembeli berkurang karena langganan katering dan kantin ikut libur.</p>
+
+    <p>Program Makan Bergizi Gratis menambah satu lapisan baru. Ketika dapur SPPG berjalan, permintaan ayam terbantu. Ketika dapur berhenti sementara, seperti pada libur sekolah Juni lalu, pedagang langsung merasakannya. Di tingkat nasional, perhimpunan peternak bahkan menilai serapan ayam untuk program MBG masih rendah. Bagi pedagang kecil, MBG adalah pasar yang menjanjikan, tetapi belum bisa dijadikan satu-satunya sandaran.</p>
+
+    <h2>Cara pedagang bertahan</h2>
+
+    <p>Tidak ada satu resep yang membuat usaha ayam potong kebal dari naik-turun harga. Namun dari pengalaman para pedagang dan pola harga sepanjang tahun, ada beberapa kebiasaan yang membuat usaha lebih tahan banting.</p>
+
+    <h3>Pegang pelanggan tetap, bukan hanya pembeli lewat</h3>
+    <p>Warung pecel lele, penjual ayam geprek, rumah makan padang, dan katering kecil membeli setiap hari dalam jumlah yang relatif stabil. Pelanggan seperti ini menjadi bantalan ketika pembeli rumah tangga sedang sepi. Harga untuk pelanggan tetap bisa disepakati per pekan agar kedua pihak sama-sama bisa merencanakan belanja.</p>
+
+    <h3>Jual semua bagian, bukan hanya karkas</h3>
+    <p>Seperti terlihat pada hitungan susut, untung dari karkas saja sangat tipis. Fillet yang laku Rp55.000 sampai Rp60.000 per kilogram, ceker, kepala, serta ati ampela adalah sumber untung yang sering diremehkan. Pedagang yang mau memotong sesuai permintaan, misalnya potong delapan untuk sayur sop atau potong kecil untuk ayam geprek, juga lebih mudah dipilih pembeli.</p>
+
+    <h3>Baca kalender permintaan</h3>
+    <p>Pola tahun ini memberi pelajaran yang jelas. Stok perlu ditambah menjelang Ramadhan dan hari besar keagamaan, lalu dikurangi setelah Lebaran dan selama libur sekolah. Pedagang yang mengambil stok dengan jumlah sama sepanjang tahun akan kelebihan barang di musim sepi dan kekurangan barang di musim ramai.</p>
+
+    <h3>Catat harga beli dan susut setiap hari</h3>
+    <p>Banyak pedagang kecil hanya mengingat harga jual. Padahal untung sebenarnya baru terlihat jika harga beli ayam hidup, berat setelah dipotong, dan hasil penjualan per bagian dicatat setiap hari. Buku catatan sederhana atau lembar di ponsel sudah cukup. Dengan catatan itu, pedagang tahu kapan harga jual harus disesuaikan dan kapan sebaiknya mengurangi stok.</p>
+
+    <h3>Jangan bergantung pada satu broker</h3>
+    <p>Harga dari broker bisa berbeda cukup jauh dalam waktu yang sama, seperti terlihat di Way Halim, di mana dua pedagang yang lapaknya berhadapan membeli pada harga Rp24.500 dan Rp28.000. Memiliki lebih dari satu sumber pasokan, termasuk hubungan langsung dengan peternak di sekitar Bandar Lampung, memberi ruang tawar yang lebih baik.</p>
+
+    <h3>Buat pembeli percaya pada kebersihan</h3>
+    <p>Pembeli ayam potong semakin memperhatikan kebersihan lapak, kesegaran daging, dan penggunaan es. Lapak yang bersih, talenan yang terawat, dan ayam yang tidak dibiarkan terlalu lama di udara terbuka adalah alasan pembeli untuk kembali. Pesanan lewat WhatsApp dengan waktu ambil yang jelas juga membantu ibu rumah tangga dan pemilik warung yang tidak sempat antre sejak subuh.</p>
+
+    <h2>Usaha yang tidak pernah libur</h2>
+
+    <p>Usaha ayam potong di Lampung adalah usaha yang tidak pernah libur, tetapi juga usaha yang tidak pernah benar-benar tenang. Permintaannya selalu ada, harganya selalu bergerak. Peternak menunggu harga kembali di atas modal. Pedagang menunggu pembeli kembali ramai. Pembeli menunggu harga kembali terjangkau.</p>
+
+    <p>Di tengah semua penantian itu, pelaku usaha yang bertahan biasanya bukan yang paling besar modalnya, melainkan yang paling teliti menghitung dan paling dekat dengan pelanggannya. Mereka tahu kapan harus menambah stok, kapan harus menahan diri, dan bagian ayam mana yang sebenarnya menyelamatkan untung hari itu. Selama ayam masih menjadi lauk harian orang Lampung, ketelitian semacam itulah yang membuat lapak tetap buka keesokan paginya.</p>
+
+    <section class="sources">
+      <h2>Sumber data</h2>
+      <ol>
+        <li><a href="https://regional.kompas.com/read/2026/02/12/150209278/harga-ayam-potong-di-lampung-naik-rp-5000-jelang-ramadhan" rel="noopener" target="_blank">Harga Ayam Potong di Lampung Naik Rp 5.000 Jelang Ramadhan</a>, Kompas.com, 12 Februari 2026</li>
+        <li><a href="https://www.asatunews.co.id/harga-ayam-hidup-anjlok-peternak-keluhkan" rel="noopener" target="_blank">Harga Ayam Hidup Anjlok, Peternak Keluhkan Kenaikan Biaya Produksi</a>, Asatunews, 5 April 2026</li>
+        <li><a href="https://www.cnbcindonesia.com/news/20260610122400-4-741653/peternak-ayam-broiler-teriak-rugi-modal-rp22000-kg-dijual-rp16000" rel="noopener" target="_blank">Peternak Ayam Broiler Teriak Rugi</a>, CNBC Indonesia, 10 Juni 2026</li>
+        <li><a href="https://finance.detik.com/berita-ekonomi-bisnis/d-8530994/peternak-teriak-rugi-ratusan-juta-gegara-harga-ayam-di-kandang-anjlok" rel="noopener" target="_blank">Peternak Teriak Rugi Ratusan Juta Gegara Harga Ayam di Kandang Anjlok</a>, Detik Finance, 13 Juni 2026</li>
+        <li><a href="https://finance.detik.com/berita-ekonomi-bisnis/d-8549540/peternak-teriak-harga-ayam-di-kandang-anjlok-jadi-rp-13-000-kg" rel="noopener" target="_blank">Peternak Teriak Harga Ayam di Kandang Anjlok Jadi Rp 13.000/Kg</a>, Detik Finance, 27 Juni 2026</li>
+        <li><a href="https://lampung.tribunnews.com/lampung/1212071/harga-ayam-kampung-di-bandar-lampung-bervariasi-tergantung-ukuran-fisik-yang-diingini" rel="noopener" target="_blank">Harga Ayam Kampung di Bandar Lampung Bervariasi</a>, Tribun Lampung, 21 Juni 2026</li>
+        <li><a href="https://lampost.co/ekonomi-dan-bisnis/harga-ayam-potong-turun-terpengaruh-libur-sekolah" rel="noopener" target="_blank">Harga Ayam Potong Turun, Terpengaruh Libur Sekolah</a>, Lampung Post, 30 Juni 2026</li>
+        <li><a href="https://lampung.tribunnews.com/lampung/1213518/harga-telur-anjlok-peternak-ayam-petelur-lampung-pangkas-produksi-di-tengah-lonjakan-biaya-pakan" rel="noopener" target="_blank">Harga Telur Anjlok, Peternak Ayam Petelur Lampung Pangkas Produksi</a>, Tribun Lampung, 13 Juli 2026</li>
+        <li><a href="https://lampung.tribunnews.com/lampung/1213713/pedagang-di-bandar-lampung-keluhkan-kenaikan-harga-ayam-hidup-dan-penurunan-pembeli" rel="noopener" target="_blank">Pedagang di Bandar Lampung Keluhkan Kenaikan Harga Ayam Hidup dan Penurunan Pembeli</a>, Tribun Lampung, 15 Juli 2026</li>
+        <li><a href="https://money.kompas.com/read/2026/06/10/134116326/harga-ayam-anjlok-peternak-minta-bumn-serap-produksi-broiler" rel="noopener" target="_blank">Harga Ayam Anjlok, Peternak Minta BUMN Serap Produksi Broiler</a>, Kompas.com, 10 Juni 2026</li>
+        <li><a href="https://lampung.viva.co.id/kuliner/6798-harga-ayam-potong-di-bandar-lampung-naik-jadi-rp30-ribu-per-kilogram-pedagang-mengeluh-sepi-pembeli" rel="noopener" target="_blank">Harga Ayam Potong di Bandar Lampung Naik Jadi Rp30 Ribu per Kilogram</a>, Viva Lampung, 21 September 2025</li>
+      </ol>
+    </section>
+  </div>
+</article>
+
+<footer>
+  <div class="foot">
+    <span>Ayam Potong Bu Giyo</span>
+    <span>Tulisan diperbarui 28 September 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
