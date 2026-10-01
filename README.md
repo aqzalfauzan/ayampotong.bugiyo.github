@@ -35,6 +35,37 @@ Siap di-hosting gratis lewat **GitHub Pages**.
 
 Opsi lain yang juga gratis: nama repo `aqzalfauzan.github.io` akan memberi alamat pendek `https://aqzalfauzan.github.io/`.
 
+## Mendaftarkan domain otomatis (Porkbun)
+
+Skrip `tools/domain.py` mengecek harga, membeli domain, dan mengarahkan DNS-nya ke GitHub Pages lewat API [Porkbun](https://porkbun.com). Cukup Python 3.8+, tanpa instalasi tambahan. Jalankan dari komputer Anda, di folder repo ini.
+
+**Persiapan (sekali saja):**
+1. Buat akun di porkbun.com, lalu verifikasi email dan nomor HP.
+2. Isi saldo di https://porkbun.com/account/credit. Pembelian lewat API dipotong dari saldo ini, maksimal $100 per domain.
+3. Buat API key di https://porkbun.com/account/api, lalu set di terminal:
+   ```bash
+   export PORKBUN_API_KEY="pk1_..."
+   export PORKBUN_SECRET_API_KEY="sk1_..."
+   ```
+   Di Windows PowerShell: `$env:PORKBUN_API_KEY="pk1_..."` (begitu juga untuk secret key).
+   Ingin mencoba tanpa uang sungguhan? Pakai **sandbox key** (`pk1_sb_...` / `sk1_sb_...`).
+
+**Langkah:**
+```bash
+python3 tools/domain.py cek                          # cek ayampotongbugiyo.com/.net/.org/.blog/...
+python3 tools/domain.py daftar ayampotongbugiyo.com  # uji tanpa menagih, lalu minta konfirmasi sebelum membeli
+python3 tools/domain.py hubungkan ayampotongbugiyo.com
+git add -A && git commit -m "Pakai domain ayampotongbugiyo.com" && git push
+```
+`hubungkan` menghapus record parkir bawaan Porkbun, membuat record A/AAAA ke GitHub Pages dan CNAME `www` ke `aqzalfauzan.github.io`, membuat file `CNAME`, dan mengganti semua alamat lengkap di situs ke domain baru.
+
+Setelah itu buka **Settings → Pages → Custom domain**, isi domainnya, lalu **Save**. Tunggu "DNS check successful", centang **Enforce HTTPS**, dan cek dengan:
+```bash
+python3 tools/domain.py periksa ayampotongbugiyo.com
+```
+
+**Penting:** jangan menambahkan file `CNAME` sebelum domainnya benar-benar Anda miliki dan DNS-nya sudah diarahkan. Kalau tidak, situs akan dialihkan ke domain yang tidak ada dan tidak bisa dibuka.
+
 ## Menambah artikel baru
 
 1. Salin `artikel/bisnis-ayam-potong-lampung-2026.html` menjadi file baru di folder `artikel/`, lalu ganti judul, deskripsi, tanggal, label, dan isinya.
