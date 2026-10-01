@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aqzalfauzan.github.io/ayampotong.bugiyo.github/sitemap.xml
+Sitemap: https://aratikel.blog/sitemap.xml

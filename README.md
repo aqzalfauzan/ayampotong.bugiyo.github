@@ -16,24 +16,18 @@ Siap di-hosting gratis lewat **GitHub Pages**.
 | `artikel-ayam-potong-lampung.html` | Alamat lama, otomatis dialihkan ke alamat artikel baru |
 | `assets/` | CSS, JavaScript, favicon, dan gambar sampul |
 
-## Menayangkan situs (gratis)
+## Menayangkan situs
 
-1. Gabungkan (merge) branch ini ke `main`.
-2. Di GitHub buka **Settings → Pages**.
-3. Pada **Build and deployment**, pilih **Source: Deploy from a branch**, branch **`main`**, folder **`/ (root)`**, lalu **Save**.
-4. Tunggu 1–2 menit. Situs akan tayang di:
-   **https://aqzalfauzan.github.io/ayampotong.bugiyo.github/**
+Situs memakai domain sendiri **https://aratikel.blog/** (lihat file `CNAME`).
 
-## Memakai domain sendiri (mis. `ayampotongbugiyo.com`)
-
-1. Beli domain di registrar mana pun (Niagahoster, Rumahweb, Cloudflare, Namecheap, dll.).
-2. Di pengaturan DNS domain tersebut tambahkan:
+1. Gabungkan (merge) perubahan ke `main`.
+2. Di GitHub buka **Settings → Pages**, pilih **Source: Deploy from a branch**, branch **`main`**, folder **`/ (root)`**, lalu **Save**.
+3. Di pengaturan DNS domain `aratikel.blog` (di registrar tempat membeli domain), isi:
    - 4 record **A** untuk `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - 1 record **CNAME** untuk `www` → `aqzalfauzan.github.io`
-3. Di **Settings → Pages → Custom domain**, isi domain Anda lalu **Save**, dan centang **Enforce HTTPS** setelah tersedia.
-4. Ganti semua `https://aqzalfauzan.github.io/ayampotong.bugiyo.github/` di file HTML, `feed.xml`, `sitemap.xml`, dan `robots.txt` dengan alamat domain baru (cari-dan-ganti sekali jalan).
+4. Kembali ke **Settings → Pages**, tunggu sampai muncul "DNS check successful", lalu centang **Enforce HTTPS**. Domain `.blog` hanya bisa dibuka lewat HTTPS.
 
-Opsi lain yang juga gratis: nama repo `aqzalfauzan.github.io` akan memberi alamat pendek `https://aqzalfauzan.github.io/`.
+Semua alamat lengkap (canonical, pratinjau tautan, RSS, sitemap) sudah memakai `https://aratikel.blog/`. Jika domain berganti, cari-dan-ganti alamat itu di file HTML, `feed.xml`, `sitemap.xml`, `robots.txt`, dan ubah isi `CNAME`.
 
 ## Menambah artikel baru
 
