@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayam Potong Bu Giyo – Ayam Segar Bandar Lampung</title>
+<meta name="description" content="Ayam potong segar dipotong setiap pagi di Bandar Lampung. Ayam utuh, potongan, fillet, ceker, ati-ampela. Bisa antar ke rumah, pesanan katering, dan potong sesuai permintaan. Pesan lewat WhatsApp.">
+<meta property="og:title" content="Ayam Potong Bu Giyo – Ayam Segar Bandar Lampung">
+<meta property="og:description" content="Ayam segar dipotong tiap pagi. Antar ke rumah, katering, potong sesuai permintaan. Pesan lewat WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta name="theme-color" content="#B8342A">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF5EA;
+  --paper:#FFFDF8;
+  --ink:#3A2A1E;
+  --muted:#76604F;
+  --line:#E6D7C0;
+  --comb:#B8342A;
+  --comb-dark:#962A21;
+  --comb-soft:#F8E4E1;
+  --yolk:#E8A817;
+  --yolk-soft:#FBEFCF;
+  --wa:#1E8E4E;
+  --wa-dark:#17733F;
+  --on-accent:#FFFFFF;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1E1611; --paper:#2A1F18; --ink:#F4E9DC; --muted:#C2AE9A; --line:#4A3A2E;
+    --comb:#F07A6E; --comb-dark:#F49A90; --comb-soft:#3D2220;
+    --yolk:#F2C04A; --yolk-soft:#3A3117;
+    --wa:#3CC57A; --wa-dark:#5BD490; --on-accent:#1E1611;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1E1611; --paper:#2A1F18; --ink:#F4E9DC; --muted:#C2AE9A; --line:#4A3A2E;
+  --comb:#F07A6E; --comb-dark:#F49A90; --comb-soft:#3D2220;
+  --yolk:#F2C04A; --yolk-soft:#3A3117;
+  --wa:#3CC57A; --wa-dark:#5BD490; --on-accent:#1E1611;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--display);font-size:1.125rem;line-height:1.6;padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--comb)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--yolk);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+@media (min-width:640px){.wrap{padding:0 1.5rem}}
+
+/* header */
+.mast{background:var(--paper);position:sticky;top:0;z-index:10;box-shadow:0 2px 0 var(--line)}
+.mast-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.75rem;padding-bottom:.75rem;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.25rem;letter-spacing:.01em;color:var(--comb);text-decoration:none;text-transform:uppercase;white-space:nowrap}
+.nav{display:flex;gap:1.1rem;flex-wrap:wrap}
+.nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.98rem}
+.nav a:hover{color:var(--comb)}
+.tapis{display:block;width:100%;height:12px}
+@media (max-width:560px){.nav{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--display);font-weight:800;text-decoration:none;border-radius:14px;padding:.95rem 1.4rem;font-size:1.1rem;line-height:1.2;border:3px solid transparent;cursor:pointer;text-align:center}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 5px 0 var(--wa-dark)}
+.btn-wa:hover{transform:translateY(1px);box-shadow:0 4px 0 var(--wa-dark)}
+.btn-ghost{background:transparent;color:var(--comb);border-color:var(--comb)}
+.btn-ghost:hover{background:var(--comb-soft)}
+:root[data-theme="dark"] .btn-wa{color:#10251A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn-wa{color:#10251A}}
+
+/* hero */
+.hero{padding:2.5rem 0 2.5rem}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+@media (min-width:820px){.hero-grid{grid-template-columns:1.35fr 1fr}}
+.tag{display:inline-block;background:var(--yolk-soft);color:var(--ink);font-weight:700;font-size:.95rem;border-radius:999px;padding:.3rem .9rem;margin:0 0 1rem}
+h1{font-weight:800;font-size:clamp(2.3rem,7vw,4rem);line-height:1;letter-spacing:-.02em;margin:0 0 1rem;color:var(--comb);text-transform:uppercase}
+h1 span{display:block;color:var(--ink)}
+.lead{font-size:1.2rem;color:var(--muted);margin:0 0 1.6rem;max-width:32em}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+.cta .btn-wa{font-size:1.2rem;padding:1.1rem 1.6rem}
+@media (max-width:480px){.cta .btn{width:100%}}
+.hero-art{justify-self:center;width:100%;max-width:340px}
+
+/* sections */
+section.block{padding:3rem 0}
+section.alt{background:var(--paper);border-top:3px solid var(--line);border-bottom:3px solid var(--line)}
+h2{font-weight:800;font-size:clamp(1.7rem,4.5vw,2.4rem);line-height:1.1;margin:0 0 .5rem;text-transform:uppercase;color:var(--comb)}
+.sec-sub{color:var(--muted);margin:0 0 1.8rem;max-width:40em}
+
+/* keunggulan */
+.perks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1rem}
+.perks li{background:var(--paper);border:3px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;display:flex;gap:.8rem;align-items:flex-start}
+.perks .ic{font-size:1.8rem;line-height:1}
+.perks b{display:block;font-size:1.1rem}
+.perks span{color:var(--muted);font-size:.98rem}
+
+/* produk */
+.price-note{display:inline-block;background:var(--yolk-soft);border-left:6px solid var(--yolk);padding:.6rem .9rem;border-radius:8px;font-size:.98rem;margin:0 0 1.6rem}
+.products{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:1rem}
+@media (min-width:600px){.products{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.products{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--bg);border:3px solid var(--comb);border-radius:18px;padding:1.2rem 1.2rem 1.1rem;display:flex;flex-direction:column;gap:.35rem;position:relative}
+.card .emo{font-size:2rem;line-height:1}
+.card h3{margin:.2rem 0 0;font-size:1.3rem;font-weight:800}
+.card p{margin:0;color:var(--muted);font-size:.98rem;flex:1}
+.price{font-weight:800;font-size:1.6rem;color:var(--comb);margin:.4rem 0 .6rem}
+.price small{font-size:.95rem;color:var(--muted);font-weight:700}
+.card .btn{padding:.7rem 1rem;font-size:1rem;width:100%}
+.card.best::after{content:"TERLARIS";position:absolute;top:-12px;right:14px;background:var(--yolk);color:#3A2A1E;font-weight:800;font-size:.78rem;padding:.2rem .6rem;border-radius:6px;letter-spacing:.04em}
+
+/* layanan */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}
+.svc{background:var(--bg);border:3px solid var(--line);border-radius:18px;padding:1.4rem}
+.svc .emo{font-size:2.4rem;line-height:1}
+.svc h3{margin:.6rem 0 .3rem;font-size:1.3rem;font-weight:800}
+.svc p{margin:0;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem;padding:0;list-style:none}
+.chips li{background:var(--yolk-soft);border-radius:999px;padding:.15rem .7rem;font-size:.9rem;font-weight:700}
+
+/* cara pesan */
+.steps{list-style:none;margin:0 0 2rem;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem;counter-reset:s}
+.steps li{counter-increment:s;background:var(--paper);border:3px solid var(--line);border-radius:18px;padding:1.2rem 1.2rem 1.2rem 4.4rem;position:relative;min-height:5rem}
+.steps li::before{content:counter(s);position:absolute;left:1.1rem;top:1.1rem;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--comb);color:var(--on-accent);font-weight:800;font-size:1.3rem;display:grid;place-items:center}
+.steps b{display:block;font-size:1.1rem}
+.steps span{color:var(--muted);font-size:.98rem}
+.big-cta{background:var(--comb);color:var(--on-accent);border-radius:22px;padding:2rem 1.5rem;text-align:center}
+.big-cta h3{margin:0 0 .4rem;font-size:clamp(1.5rem,4vw,2rem);font-weight:800;text-transform:uppercase}
+.big-cta p{margin:0 0 1.3rem;opacity:.92}
+
+/* lokasi */
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}
+.info-box{background:var(--bg);border:3px solid var(--line);border-radius:18px;padding:1.4rem}
+.info-box h3{margin:0 0 .5rem;font-size:1.2rem;font-weight:800}
+.info-box p{margin:0 0 .3rem}
+.hours{margin:0;padding:0;list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:1rem;border-bottom:2px dashed var(--line);padding:.35rem 0}
+.hours li:last-child{border-bottom:0}
+
+/* artikel */
+.read{display:flex;gap:1.2rem;align-items:center;background:var(--paper);border:3px solid var(--line);border-radius:18px;padding:1.3rem;text-decoration:none;color:var(--ink)}
+.read:hover{border-color:var(--comb)}
+.read .emo{font-size:2.4rem}
+.read b{display:block;font-size:1.15rem}
+.read span{color:var(--muted);font-size:.98rem}
+
+footer{background:var(--ink);color:var(--bg);padding:2rem 0 6rem;margin-top:1rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;font-size:.95rem}
+.foot b{font-size:1.1rem;text-transform:uppercase}
+
+/* tombol WA melayang */
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--wa);color:#fff;border-radius:999px;padding:.85rem 1.2rem;font-weight:800;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);display:flex;align-items:center;gap:.5rem;font-size:1rem}
+.wa-float svg{width:24px;height:24px;flex:none}
+@media (max-width:380px){.wa-float .lbl{display:none}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap mast-inner">
+    <a class="brand" href="./">🐔 Ayam Potong Bu Giyo</a>
+    <nav class="nav" aria-label="Menu">
+      <a href="#produk">Produk</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#pesan">Cara Pesan</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="artikel-ayam-potong-lampung.html">Artikel</a>
+    </nav>
+  </div>
+  <svg class="tapis" viewBox="0 0 400 12" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="tp" width="24" height="12" patternUnits="userSpaceOnUse">
+        <rect width="24" height="12" fill="var(--comb)"/>
+        <path d="M0 6 L6 0 L12 6 L6 12 Z" fill="var(--yolk)"/>
+        <path d="M12 6 L18 0 L24 6 L18 12 Z" fill="var(--ink)"/>
+        <path d="M4.5 6 L6 4.5 L7.5 6 L6 7.5 Z" fill="var(--comb)"/>
+        <path d="M16.5 6 L18 4.5 L19.5 6 L18 7.5 Z" fill="var(--yolk)"/>
+      </pattern>
+    </defs>
+    <rect width="400" height="12" fill="url(#tp)"/>
+  </svg>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="tag">📍 Bandar Lampung · Buka setiap hari</p>
+      <h1>Ayam segar <span>dipotong tiap pagi!</span></h1>
+      <p class="lead">Ayam potong bersih, timbangan jujur, dan bisa dipotong sesuai keinginan Anda. Untuk masak di rumah, warung makan, sampai pesanan hajatan.</p>
+      <div class="cta">
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan ayam potong." href="#">📱 PESAN SEKARANG LEWAT WA</a>
+        <a class="btn btn-ghost" href="#produk">Lihat harga</a>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 320 300" role="img" aria-label="Gambar ayam">
+      <circle cx="160" cy="160" r="135" fill="var(--yolk-soft)"/>
+      <circle cx="160" cy="160" r="135" fill="none" stroke="var(--yolk)" stroke-width="6" stroke-dasharray="4 14" stroke-linecap="round"/>
+      <!-- badan -->
+      <ellipse cx="150" cy="185" rx="85" ry="70" fill="var(--paper)" stroke="var(--ink)" stroke-width="5"/>
+      <!-- ekor -->
+      <path d="M68 170 C40 150 45 115 70 110 C70 135 80 150 95 160 Z" fill="var(--paper)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+      <!-- sayap -->
+      <path d="M115 180 C130 150 175 150 185 180 C170 205 130 210 115 180 Z" fill="var(--yolk-soft)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+      <!-- kepala -->
+      <circle cx="215" cy="115" r="42" fill="var(--paper)" stroke="var(--ink)" stroke-width="5"/>
+      <!-- jengger -->
+      <path d="M190 80 C188 60 205 58 208 72 C210 52 230 52 230 72 C236 58 252 64 245 84 Z" fill="var(--comb)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+      <!-- paruh -->
+      <path d="M254 112 L280 122 L254 132 Z" fill="var(--yolk)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+      <!-- pial -->
+      <path d="M245 136 C250 152 238 160 232 148 Z" fill="var(--comb)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="225" cy="108" r="6" fill="var(--ink)"/>
+      <!-- kaki -->
+      <path d="M130 252 L130 280 M118 280 L142 280 M175 252 L175 280 M163 280 L187 280" stroke="var(--yolk)" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<section class="block alt" aria-labelledby="h-unggul">
+  <div class="wrap">
+    <h2 id="h-unggul">Kenapa beli di Bu Giyo?</h2>
+    <p class="sec-sub">Langganan ibu rumah tangga dan warung makan di Bandar Lampung.</p>
+    <ul class="perks">
+      <li><span class="ic">🌅</span><div><b>Segar tiap pagi</b><span>Dipotong subuh, bukan stok kemarin.</span></div></li>
+      <li><span class="ic">🧼</span><div><b>Bersih & higienis</b><span>Dicuci bersih, lapak dijaga rapi.</span></div></li>
+      <li><span class="ic">⚖️</span><div><b>Timbangan jujur</b><span>Ditimbang di depan Anda.</span></div></li>
+      <li><span class="ic">🔪</span><div><b>Potong sesuai mau</b><span>Utuh, 4, 8, 12 potong, atau fillet.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="produk" aria-labelledby="h-produk">
+  <div class="wrap">
+    <h2 id="h-produk">Produk & Harga</h2>
+    <!-- GANTI HARGA DI SINI. Perbarui juga tanggal di bawah setiap kali harga berubah. -->
+    <p class="price-note">💡 Harga per <b>12 Oktober 2026</b>. Harga ayam bisa naik-turun mengikuti pasar, silakan cek dulu lewat WhatsApp.</p>
+    <ul class="products">
+      <li class="card best">
+        <span class="emo">🐔</span>
+        <h3>Ayam Utuh (Karkas)</h3>
+        <p>Ayam broiler bersih tanpa bulu & jeroan, berat ±1–1,5 kg per ekor.</p>
+        <div class="price">Rp 32.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Ayam Utuh (Karkas). Berat: ... kg, dipotong: ..." href="#">Pesan</a>
+      </li>
+      <li class="card">
+        <span class="emo">🍗</span>
+        <h3>Paha (Atas & Bawah)</h3>
+        <p>Daging tebal dan juicy, pas untuk digoreng, bakar, atau opor.</p>
+        <div class="price">Rp 38.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Paha Ayam. Berat: ... kg" href="#">Pesan</a>
+      </li>
+      <li class="card">
+        <span class="emo">🥩</span>
+        <h3>Dada Ayam</h3>
+        <p>Dengan tulang, banyak daging. Cocok untuk soto dan ayam goreng.</p>
+        <div class="price">Rp 38.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Dada Ayam. Berat: ... kg" href="#">Pesan</a>
+      </li>
+      <li class="card best">
+        <span class="emo">🍽️</span>
+        <h3>Fillet Dada</h3>
+        <p>Tanpa tulang & kulit, siap dimasak. Favorit untuk geprek dan katsu.</p>
+        <div class="price">Rp 52.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Fillet Dada. Berat: ... kg" href="#">Pesan</a>
+      </li>
+      <li class="card">
+        <span class="emo">🪽</span>
+        <h3>Sayap Ayam</h3>
+        <p>Untuk spicy wings, sayap goreng mentega, atau sup.</p>
+        <div class="price">Rp 34.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Sayap Ayam. Berat: ... kg" href="#">Pesan</a>
+      </li>
+      <li class="card">
+        <span class="emo">🦶</span>
+        <h3>Ceker</h3>
+        <p>Sudah dibersihkan dan dipotong kukunya. Mantap untuk seblak & kaldu.</p>
+        <div class="price">Rp 22.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Ceker Ayam. Berat: ... kg" href="#">Pesan</a>
+      </li>
+      <li class="card">
+        <span class="emo">🫀</span>
+        <h3>Ati Ampela</h3>
+        <p>Segar dan bersih, untuk sambal goreng ati atau sate.</p>
+        <div class="price">Rp 3.000 <small>/ pasang</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Ati Ampela. Jumlah: ... pasang" href="#">Pesan</a>
+      </li>
+      <li class="card">
+        <span class="emo">🍲</span>
+        <h3>Kepala & Leher</h3>
+        <p>Murah meriah, untuk kaldu, gulai, atau pakan.</p>
+        <div class="price">Rp 15.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Kepala & Leher Ayam. Berat: ... kg" href="#">Pesan</a>
+      </li>
+      <li class="card">
+        <span class="emo">🍖</span>
+        <h3>Tulang / Balungan</h3>
+        <p>Sisa fillet, masih ada dagingnya. Pas untuk kaldu dan sop.</p>
+        <div class="price">Rp 12.000 <small>/ kg</small></div>
+        <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan Tulang/Balungan Ayam. Berat: ... kg" href="#">Pesan</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block alt" id="layanan" aria-labelledby="h-layanan">
+  <div class="wrap">
+    <h2 id="h-layanan">Layanan Kami</h2>
+    <p class="sec-sub">Tidak sempat ke pasar? Tenang, kami bantu.</p>
+    <div class="services">
+      <div class="svc">
+        <span class="emo">🛵</span>
+        <h3>Antar ke Rumah</h3>
+        <p>Pesan lewat WA, ayam diantar ke rumah atau warung Anda di sekitar Bandar Lampung. Ongkir disesuaikan jarak.</p>
+      </div>
+      <div class="svc">
+        <span class="emo">🍽️</span>
+        <h3>Pesanan Katering & Acara</h3>
+        <p>Untuk hajatan, syukuran, arisan, warung makan, dan katering. Pesan jumlah besar dengan harga khusus.</p>
+        <ul class="chips"><li>Hajatan</li><li>Warung makan</li><li>Katering</li><li>Aqiqah</li></ul>
+      </div>
+      <div class="svc">
+        <span class="emo">🔪</span>
+        <h3>Potong Sesuai Permintaan</h3>
+        <p>Sebutkan saja maunya, kami potongkan gratis.</p>
+        <ul class="chips"><li>Utuh</li><li>4 potong</li><li>8 potong</li><li>12 potong</li><li>Fillet</li><li>Cincang</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="pesan" aria-labelledby="h-pesan">
+  <div class="wrap">
+    <h2 id="h-pesan">Cara Pesan</h2>
+    <p class="sec-sub">Gampang, cukup tiga langkah.</p>
+    <ol class="steps">
+      <li><b>Chat WhatsApp</b><span>Tekan tombol hijau di halaman ini.</span></li>
+      <li><b>Sebutkan pesanan</b><span>Jenis ayam, berat, cara dipotong, dan jam ambil/antar.</span></li>
+      <li><b>Ambil atau diantar</b><span>Ayam disiapkan segar, bayar tunai atau transfer.</span></li>
+    </ol>
+    <div class="big-cta">
+      <h3>Mau pesan untuk besok pagi?</h3>
+      <p>Pesan sehari sebelumnya supaya ayam Anda sudah siap begitu lapak buka.</p>
+      <a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau pesan ayam untuk besok pagi." href="#">📱 PESAN LEWAT WHATSAPP</a>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="lokasi" aria-labelledby="h-lokasi">
+  <div class="wrap">
+    <h2 id="h-lokasi">Lokasi & Jam Buka</h2>
+    <p class="sec-sub">Hubungi kami lewat WhatsApp untuk alamat lengkap dan petunjuk arah.</p>
+    <div class="info">
+      <div class="info-box">
+        <h3>📍 Lokasi</h3>
+        <p><b>Bandar Lampung</b>, Lampung</p>
+        <p>Antar ke rumah tersedia untuk area sekitar.</p>
+      </div>
+      <div class="info-box">
+        <h3>🕔 Jam Buka</h3>
+        <!-- GANTI JAM BUKA DI SINI -->
+        <ul class="hours">
+          <li><span>Senin – Sabtu</span><b>05.00 – 12.00</b></li>
+          <li><span>Minggu</span><b>05.00 – 10.00</b></li>
+          <li><span>Pesan via WA</span><b>Kapan saja</b></li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h3>📱 WhatsApp</h3>
+        <p data-wa-number>0812-3456-7890</p>
+        <p style="margin-top:.8rem"><a class="btn btn-wa" data-wa="Halo Bu Giyo, saya mau tanya-tanya soal ayam potong." href="#">Chat sekarang</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="h-artikel">
+  <div class="wrap">
+    <h2 id="h-artikel">Baca Juga</h2>
+    <a class="read" href="artikel-ayam-potong-lampung.html">
+      <span class="emo">📰</span>
+      <span><b>Bisnis ayam potong di Lampung: harga naik-turun, untung menipis, dan cara pedagang bertahan</b><span>Kenapa harga ayam sering berubah? Simak catatan kami.</span></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><b>🐔 Ayam Potong Bu Giyo</b><br>Ayam segar setiap hari · Bandar Lampung</div>
+    <div>© 2026 Ayam Potong Bu Giyo</div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="Halo Bu Giyo, saya mau pesan ayam potong." href="#" aria-label="Pesan lewat WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+  <span class="lbl">Pesan</span>
+</a>
+
+<script>
+  // ===== GANTI NOMOR WHATSAPP DI SINI =====
+  // Format internasional tanpa "+" dan tanpa "0" di depan. Contoh: 0812-3456-7890 -> 6281234567890
+  var WA = "6281234567890";
+
+  document.querySelectorAll("[data-wa]").forEach(function (a) {
+    a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(a.getAttribute("data-wa"));
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+  document.querySelectorAll("[data-wa-number]").forEach(function (el) {
+    var local = "0" + WA.replace(/^62/, "");
+    el.textContent = local.replace(/^(\d{4})(\d{4})(\d+)$/, "$1-$2-$3");
+  });
+</script>
+</body>
+</html>
